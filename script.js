@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const colorSettings = {
             light: { 
-                navbar: "navbar-light bg-light", 
+                navbar: "", 
                 jumbotron: "bg-light", 
                 main: "",
                 carta: "card-neutro",
@@ -51,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
             if (navbar) navbar.className = `navbar navbar-expand-lg fixed-top ${settings.navbar}`;
             if (jumbotron) jumbotron.className = `jumbotron text-center ${settings.jumbotron}`;
             if (footer) footer.className = `text-center py-4 ${settings.footer}`;
-            if (main) main.className = `${settings.main}`;
             if (metaThemeColor) metaThemeColor.setAttribute("content", settings.metaColor);
             if (activeModeText) activeModeText.textContent = theme.charAt(0).toUpperCase() + theme.slice(1) + " Mode";
 
