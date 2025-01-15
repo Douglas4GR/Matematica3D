@@ -4,13 +4,24 @@ main {
 }
 
 .logo-dg {
-    background-image: url('../imagens/logos/logo-douglas.png');
     width: 40px;
     height: 40px;
-    background-size: cover;
-    background-position: center;
-    display: inline-block;
+    background-color: #f1f9d7; /* Cor inicial */
+    -webkit-mask-image: url('../imagens/logos/logo.svg');
+    mask-image: url('../imagens/logos/logo.svg');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
+    transition: background-color 0.3s;
 }
+
+.logo-dg:hover {
+    background-color: #cbe575; /* Cor no hover */
+}
+
 
 .navbar-dg {
     background-color: rgb(40, 54, 24,75%);
@@ -53,7 +64,7 @@ main {
 }
 
 .footer-dg {
-    background-color: #283618;
+    background-color: #BC6C25;
 }
 
 .github-card .card {
