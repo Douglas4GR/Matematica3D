@@ -52,22 +52,6 @@ footer {
 }
 
 
-/* Estilo padrão para botões de alternância de tema */
-.btn-theme {
-    width: 100px;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-/* Modal */
-.modal-body {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-}
-
-
 /* Container principal do portfólio */
 .portfolio-card {
     text-decoration: none;
