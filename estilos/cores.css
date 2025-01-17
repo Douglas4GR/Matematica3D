@@ -1,5 +1,5 @@
 main {
-    background-color: #ffffff;
+    background-color: #f5ebe0;
     color: #000000;
 }
 .logo-dg {
@@ -60,6 +60,13 @@ main {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: #283618;
+}
+
+.carta {
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.35);
+    padding: 10px;
 }
 
 .footer-dg {
