@@ -2,10 +2,11 @@ main {
     background-color: #f5ebe0;
     color: #000000;
 }
+
 .logo-dg {
     width: 40px;
     height: 40px;
-    background-color: #f1f9d7; /* Cor inicial */
+    background-color: #f1f9d7;
     -webkit-mask-image: url('../imagens/logos/logo.svg');
     mask-image: url('../imagens/logos/logo.svg');
     -webkit-mask-repeat: no-repeat;
@@ -15,10 +16,27 @@ main {
     -webkit-mask-position: center;
     mask-position: center;
     transition: background-color 0.3s;
+    padding-right: 4px;
 }
 
-.logo-dg:hover {
-    background-color: #cbe575; /* Cor no hover */
+.titulo-dg {
+    color: #f1f9d7;
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40px;
+    transition: color 0.3s;
+    text-align: left;
+}
+
+.navbar-brand:hover .logo-dg {
+    background-color: #cbe575;
+}
+
+.navbar-brand:hover .titulo-dg {
+    color: #cbe575;
 }
 
 
@@ -44,6 +62,11 @@ main {
 .jumbotron-dg {
     background-color: #606C38;
     color: white;
+    padding: 2rem;
+}
+
+.subtitulo-jumbotron {
+    font-weight: 100;
 }
 
 .destaque-dg {
@@ -71,8 +94,4 @@ main {
 
 .footer-dg {
     background-color: #BC6C25;
-}
-
-.github-card .card {
-    background-image: url('../imagens/perfis/perfil-github.png');
 }
