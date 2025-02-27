@@ -1,13 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
     emailjs.init("NIYDrK5we5-T6fQjH"); // Inicia o EmailJS com sua Public Key
 
+    // Adiciona o evento de submit no formulário
     document.getElementById("contact-form").addEventListener("submit", function (event) {
-        event.preventDefault();
+        event.preventDefault();  // Impede o envio padrão do formulário
 
         // Captura o token do reCAPTCHA
         var captchaResponse = grecaptcha.getResponse();
         if (!captchaResponse) {
-            alert("Por favor, complete o reCAPTCHA!");
+            alert("Por favor, complete o reCAPTCHA!"); // Exibe um alerta se o reCAPTCHA não foi completado
             return;
         }
 
@@ -24,25 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(function (response) {
                 alert("Mensagem enviada com sucesso!");
                 document.getElementById("contact-form").reset();
-                grecaptcha.reset(); // Reseta o reCAPTCHA
+                grecaptcha.reset(); // Reseta o reCAPTCHA após o envio
             }, function (error) {
                 alert("Erro ao enviar mensagem, tente novamente!");
                 console.error("Erro:", error);
             });
     });
-});
-
-
-let lastSentTime = 0;
-
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault();
-    let now = new Date().getTime();
-
-    if (now - lastSentTime < 60000) { // 1 minuto de espera
-        alert("Espere um pouco antes de enviar outra mensagem.");
-        return;
-    }
-
-    lastSentTime = now;
 });
