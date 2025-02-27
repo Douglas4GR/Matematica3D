@@ -124,7 +124,24 @@
         <section id="contact" class="py-5 px-1">
             <div class="container">
                 <div class="carta">
-
+                    <form id="contact-form">
+                        <label>Nome:</label>
+                        <input type="text" id="name" required>
+                    
+                        <label>Email:</label>
+                        <input type="email" id="email" required>
+                    
+                        <label>Mensagem:</label>
+                        <textarea id="message" required></textarea>
+                    
+                        <!-- Google reCAPTCHA -->
+                        <div class="g-recaptcha" data-sitekey="6LcpCeQqAAAAAFAw19r62IfmWKWYY-Fnkf1Xza2l"></div>
+                    
+                        <button type="submit">Enviar</button>
+                    </form>
+                    
+                    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                    
                 </div>
             </div>
         </section>
