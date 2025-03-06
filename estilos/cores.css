@@ -1,5 +1,5 @@
 main {
-    background-color: #ee9b00;
+    background-color: #fff;
     color: #000000;
 }
 
@@ -29,6 +29,10 @@ main {
     height: 40px;
     transition: color 0.3s;
     text-align: left;
+}
+
+.subtitulo-dg {
+    color: #ee9b00;
 }
 
 .navbar-brand:hover .logo-dg {
