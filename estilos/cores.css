@@ -66,7 +66,6 @@ main {
 .jumbotron-dg {
     background-color: #219ebc;
     color: white;
-    padding: 2rem;
 }
 
 .subtitulo-jumbotron {
@@ -81,7 +80,6 @@ main {
 }
 
 .body-dg {
-    background-image: url('../imagens/taiga.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -90,9 +88,9 @@ main {
 }
 
 .carta {
-    border-radius: 15px;
+    border-radius: 1px;
     backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, 85%);
+    background-color: rgba(255, 255, 255);
     padding: 10px;
 }
 

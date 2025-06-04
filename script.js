@@ -1,3 +1,18 @@
+let swiper; // Declara fora para ter acesso global
+
+window.addEventListener('load', () => {
+  swiper = new Swiper('.swiper', {
+    direction: 'vertical',
+    loop: false,
+    mousewheel: true,
+    keyboard: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+});
+
+
 document.addEventListener("DOMContentLoaded", function () {
     emailjs.init("NIYDrK5we5-T6fQjH");
 
