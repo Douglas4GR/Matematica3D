@@ -2,173 +2,269 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matemática Tátil</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="estilos/animacoes.css">
-  <link rel="stylesheet" href="estilos/cores.css">
-  <link rel="stylesheet" href="estilos/botao.css">
-  <link rel="stylesheet" href="estilos/swiper.css">
-  <link rel="icon" href="imagens/logos/favicon.ico" type="image/x-icon">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemática Tátil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/animacoes.css">
+    <link rel="stylesheet" href="estilos/cores.css">
+    <link rel="stylesheet" href="estilos/botao.css">
+    <link rel="icon" href="imagens/logos/favicon.ico" type="image/x-icon">
 </head>
 
 <body class="body-dg">
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-dg">
-    <div class="container-fluid">
-      <!--titulo e logo-->
-      <a class="navbar-brand d-flex link-interactive" href="#" onclick="swiper?.slideTo(0)">
-        <div class="logo-dg"></div>
-        <div class="titulo-dg">
-          <span>Matemática</span>
-          <span>Tátil</span>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-dg">
+        <div class="container-fluid">
+            <!--titulo e logo-->
+            <a class="navbar-brand d-flex link-interactive" href="#">
+                <div class="logo-dg"></div>
+                <div class="titulo-dg">
+                    <span>Matemática</span>
+                    <span>Tátil</span>
+                </div>
+            </a>
+            <!--navegação-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#links">Links</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                </ul>
+            </div>
         </div>
-      </a>
-      <!--navegação-->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="#about"></a></li>
-          <li class="nav-item"><a class="nav-link" href="#links">Links</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    </nav>
 
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide slide-1" id="slide1">
-        <div style="padding:2rem"></div>
-        <header class="jumbotron-dg p-2">
-          <h1 class="display-6">Moldando o ensino para acessibilidade.</h1>
-          <p class="subtitulo-jumbotron">Um projeto que faz uso da <em class="destaque-dg"> Impressora 3D</em> para
+    <div style="padding:2rem"><!--desnivel--></div>
+    <!-- Jumbotron -->
+    <header class="jumbotron-dg">
+        <h1 class="display-6">Moldando o ensino para acessibilidade.</h1>
+        <p class="subtitulo-jumbotron">Um projeto que faz uso da <em class="destaque-dg"> Impressora 3D</em> para
             facilitar o ensino para portadores de deficiência visual.</p>
-        </header>
-        <div class="py-1 carta" style="height: 100vh;">
-          <h2 class="subtitulo-dg mt-2">Sobre o projeto</h2>
-          <div class="mt-2 p-0">
-            <div class="px-3">
-              <p>Os materiais didáticos que envolvem a impressão 3D ou sua modelagem disponíveis atualmente são
-                majoritariamente produzidos para estudantes que não portam limitações físicas. Os poucos voltados para
-                deficientes visuais giram em torno da geometria e percepção espacial de objetos, em sua maioria para
-                estudantes do ensino fundamental ou médio, logo deixando um vão para alunos de ensino superior.</p>
-              <p>Nossa ideia surgiu da necessidade de materiais didáticos para alunos cegos. Mais especificamente, para
-                estudantes de disciplinas que envolvem operações algébricas e vetoriais do curso de Análise e
-                Desenvolvimento de Sistemas da instituição Faeterj-RIO.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    </header>
 
-      <!-- ################### 2 #################### -->
-      <div class="swiper-slide slide-2">
-        <div class="gallery-container">
-          <h2 class="subtitulo-dg display-2 ms-3 mb-0" style="padding-top:2rem">Galeria</h2>
-
-          <!-- Linha 1 -->
-          <div class="infinite-gallery-row linha-escura" data-speed="0.3">
-            <div class="infinite-gallery">
-              <img src="imagens/fotos/1.jpg" alt="Foto 1">
-              <img src="imagens/fotos/2.jpg" alt="Foto 2">
-              <img src="imagens/fotos/3.jpg" alt="Foto 3">
-              <img src="imagens/fotos/4.jpg" alt="Foto 4">
+    <main class="main-dg">
+        <!-- Seção 1 -->
+        <section id="about" class=" py-5 px-1">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <!-- Coluna 1 -->
+                    <div class="col-12 col-lg-9">
+                        <h2 class="subtitulo-dg">Sobre o projeto</h2>
+                        <div class="carta mt-2 p-0">
+                            <!-- esta div abaixo é só para melhorar o espaçamento entre os lados (p=padding x=horizontal) -->
+                            <div class="px-3">
+                                <p>Nossa ideia surgiu da necessidade de materiais didáticos para alunos cegos. Mais
+                                    especificamente, para estudantes de disciplinas que envolvem operações algébricas e
+                                    vetoriais do curso de Análise e Desenvolvimento de Sistemas da instituição
+                                    Faeterj-RIO.
+                                </p>
+                                <p>
+                                    <button class="btn" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseExample" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        + info
+                                    </button>
+                                </p>
+                                <div class="collapse" id="collapseExample">
+                                    <div class="card card-body">
+                                        <p>Os materiais didáticos que envolvem a impressão 3D ou sua modelagem
+                                            disponíveis
+                                            atualmente são majoritariamente produzidos para estudantes que não portam
+                                            limitações
+                                            físicas. Os poucos voltados para deficientes visuais, sejam cegos totais ou
+                                            parciais,
+                                            giram em torno da geometria e percepção espacial de objetos, em sua maioria
+                                            para
+                                            estudantes do ensino fundamental ou médio. Isso gera um vão quando se trata
+                                            do
+                                            ensino
+                                            superior para os alunos, consequentemente um abismo que impede essas pessoas
+                                            de
+                                            concorrerem futuramente no mercado de trabalho de forma justa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <!-- Linha 2 (velocidade diferente) -->
-          <div class="infinite-gallery-row" data-speed="0.9">
-            <div class="infinite-gallery">
-              <img src="imagens/fotos/2.jpg" alt="Foto 2">
-              <img src="imagens/fotos/3.jpg" alt="Foto 3">
-              <img src="imagens/fotos/4.jpg" alt="Foto 4">
-              <img src="imagens/fotos/1.jpg" alt="Foto 1">
-            </div>
-          </div>
-          <!-- Linha 3 (opcional) -->
-          <div class="infinite-gallery-row linha-escura" data-speed="0.6">
-            <div class="infinite-gallery">
-              <img src="imagens/fotos/3.jpg" alt="Foto 3">
-              <img src="imagens/fotos/4.jpg" alt="Foto 4">
-              <img src="imagens/fotos/1.jpg" alt="Foto 1">
-              <img src="imagens/fotos/2.jpg" alt="Foto 2">
-            </div>
-          </div>
-        </div>
-      </div>
+        </section>
 
-      <!-- ################### 3 #################### -->
-      <div class="swiper-slide slide-3 text-center">
-        <h2 class="subtitulo-dg display-2" style="padding-top:5rem">Links</h2>
-        <div class="container align-content-center" style="height: 70vh;">
-          <div class="row align-items-center">
-            <div class="col my-2">
-              <a href="https://www.tinkercad.com/users/cT3rPSRHLya-douglas-rangel" target="_blank"
-                class="botao-personalizado">
-                <i class="fa-regular fa-lightbulb"></i>
-                <span class="texto">Modelos 3D</span>
-                <i class="fas fa-arrow-right"></i>
-              </a>
+        <!-- Seção 2 -->
+        <section id="done" class="py-5 px-1">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <!-- Coluna 1 -->
+                    <div class="col-12 col-lg-3">
+                        <h2 class="subtitulo-dg">Galeria</h2>
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="imagens/fotos/1.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>First slide label</h5>
+                                        <p>Some representative placeholder content for the first slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imagens/fotos/3.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Second slide label</h5>
+                                        <p>Some representative placeholder content for the second slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imagens/fotos/4.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Third slide label</h5>
+                                        <p>Some representative placeholder content for the third slide.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Coluna 2 -->
+                    <div class="col-12 col-lg-4">
+                        <h2 class="subtitulo-dg">O que foi feito</h2>
+                    </div>
+                    <!-- Coluna 3 -->
+                    <div class="col-12 col-lg-3">
+                        <h2 class="subtitulo-dg">Links</h2>
+                        <div class="row">
+
+                            <!-- Coluna 1 -->
+                            <div class="carta col">
+                                <a href="https://www.tinkercad.com/users/cT3rPSRHLya-douglas-rangel" target="_blank"
+                                    class="botao-personalizado">
+                                    <i class="fas fa-star"></i>
+                                    <span class="texto">Modelos 3D</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <!-- Coluna 2 -->
+                            <div class="carta col">
+                                <a href="imagens/projeto.pdf" target="_blank" class="botao-personalizado">
+                                    <i class="fas fa-star"></i>
+                                    <span class="texto">Docunento</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <!-- Coluna 3 -->
+                            <div class="carta col">
+                                <a href="https://drive.google.com/drive/folders/14-PPILB4befHjlbrTusFBOFrGPwj0KJk?usp=sharing"
+                                    class="botao-personalizado">
+                                    <i class="fas fa-star"></i>
+                                    <span class="texto">Drive</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <!-- fim da terceira coluna -->
+                        </div>
+                    </div>
+                    <!-- fim da terceira coluna -->
+                </div>
             </div>
-            <div class="col my-2">
-              <a href="imagens/projeto.pdf" target="_blank" class="botao-personalizado">
-                <i class="fa-regular fa-file-pdf"></i>
-                <span class="texto">Trabalho completo</span>
-                <i class="fas fa-arrow-right"></i>
-              </a>
+        </section>
+
+        <!-- EMAIL -->
+        <section id="contact" class="py-5 px-1">
+            <div class="container">
+                <div class="carta">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseTwo">
+                                    Fala Comigo
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                                <div class="accordion-body">
+                                    <form id="contact-form">
+                                        <div class="form-floating mb-1">
+                                            <input type="text" class="form-control" placeholder="Nome" id="name"
+                                                name="user_name" required> 
+                                            <label for="name">Nome</label>
+                                        </div>
+                                        <div class="form-floating mb-1">
+                                            <input type="email" class="form-control" placeholder="Email" id="email"
+                                                name="user_email" required>
+                                            <label for="email">Email</label>
+                                        </div>
+                                        <div class="form-floating mb-1">
+                                            <textarea class="form-control" placeholder="Mensagem" id="message"
+                                                name="message" style="height: 100px" required></textarea>
+                                            <label for="message">Mensagem</label>
+                                        </div>
+
+                                        <!-- reCAPTCHA -->
+                                        <div class="g-recaptcha mb-3" data-sitekey="SUA_SITE_KEY_AQUI"></div>
+                                        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+                                        <button type="submit" class="btn btn-primary">Enviar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col my-2">
-              <a href="https://drive.google.com/drive/folders/14-PPILB4befHjlbrTusFBOFrGPwj0KJk?usp=sharing"
-                class="botao-personalizado">
-                <i class="fa-regular fa-hard-drive"></i>
-                <span class="texto">Drive</span>
-                <i class="fas fa-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+        </section>
+    </main>
+    <footer class="text-center py-2 footer-dg">
+        <p>Portanto, não vos inquieteis com o dia de amanhã, pois o amanhã trará suas próprias preocupações. Basta a <em
+                class="destaque-dg">cada dia o seu mal</em>. Mat 6:34</p>
+    </footer>
 
-      <!-- ################### 4 #################### -->
-      <div class="swiper-slide slide-4">
-          <h2 class="subtitulo-dg display-2 ms-3 mb-0" style="padding-top:5rem">Fale comigo</h2>
-        <form id="contact-form">
-          <div class="form-floating mb-1">
-            <input type="text" class="form-control" placeholder="Nome" id="name" name="user_name" required>
-            <label for="name">Nome</label>
-          </div>
-          <div class="form-floating mb-1">
-            <input type="email" class="form-control" placeholder="Email" id="email" name="user_email" required>
-            <label for="email">Email</label>
-          </div>
-          <div class="form-floating mb-1">
-            <textarea class="form-control" placeholder="Mensagem" id="message" name="message" style="height: 100px"
-              required></textarea>
-            <label for="message">Mensagem</label>
-          </div>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
 
-          <!-- reCAPTCHA -->
-          <div class="g-recaptcha mb-3" data-sitekey="SUA_SITE_KEY_AQUI"></div>
-          <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+            emailjs.sendForm('service_hlevq7i', 'template_uf5cfji', this)
+                .then(function () {
+                    alert('Mensagem enviada com sucesso!');
+                }, function (error) {
+                    console.log('Erro:', error);
+                    alert('Erro ao enviar mensagem.');
+                });
+        });
+    </script>
 
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
-      </div>
-    </div>
-  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("NIYDrK5we5-T6fQjH");
+        })();
+    </script>
 
-  <!-- Bibliotecas -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/7b998e9095.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/7b998e9095.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
+

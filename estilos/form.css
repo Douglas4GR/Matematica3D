@@ -1,0 +1,55 @@
+/* Container do formulário */
+.form-container {
+  background: rgba(0, 0, 0, 0.6); /* Fundo escuro e translúcido */
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 600px;
+  margin: auto;
+  backdrop-filter: blur(8px); /* Desfoque de fundo para um efeito elegante */
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Campos de entrada */
+.form-control {
+  background: rgba(255, 255, 255, 0.1) !important; /* Fundo translúcido escuro */
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Labels flutuantes */
+.form-floating > label {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Focus nos campos */
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border-color: white;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+  color: white;
+}
+
+/* Botão */
+.btn-enviar {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  backdrop-filter: blur(4px);
+  transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: black;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 1.5rem;
+  }
+}
