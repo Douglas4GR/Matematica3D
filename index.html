@@ -2,177 +2,191 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matemática Tátil</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="estilos/animacoes.css">
-  <link rel="stylesheet" href="estilos/cores.css">
-  <link rel="stylesheet" href="estilos/botao.css">
-  <link rel="stylesheet" href="estilos/swiper.css">
-  <link rel="stylesheet" href="estilos/form.css">
-  <link rel="icon" href="imagens/logos/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemática Tátil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="estilos/animacoes.css">
+    <link rel="stylesheet" href="estilos/cores.css">
+    <link rel="stylesheet" href="estilos/botao.css">
+    <link rel="stylesheet" href="estilos/swiper.css">
+    <link rel="stylesheet" href="estilos/form.css">
+    <link rel="icon" href="imagens/logos/favicon.ico" type="image/x-icon">
 
 </head>
 
 <body class="body-dg">
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-dg">
-    <div class="container-fluid">
-      <!--titulo e logo-->
-      <a class="navbar-brand d-flex link-interactive" href="#" onclick="swiper?.slideTo(0)">
-        <div class="logo-dg"></div>
-        <div class="titulo-dg">
-          <span>Matemática</span>
-          <span>Tátil</span>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-dg">
+        <div class="container-fluid">
+            <!--titulo e logo-->
+            <a class="navbar-brand d-flex link-interactive" href="#" onclick="swiper?.slideTo(0)">
+                <div class="logo-dg"></div>
+                <div class="titulo-dg">
+                    <span>Matemática</span>
+                    <span>Tátil</span>
+                </div>
+            </a>
+            <!--navegação-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="swiper?.slideTo(2)">Links</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="swiper?.slideTo(4)">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://douglas4gr.github.io/">4GR</a></li>
+                </ul>
+            </div>
         </div>
-      </a>
-      <!--navegação-->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="#about"></a></li>
-          <li class="nav-item"><a class="nav-link" href="#links">Links</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
-        </ul>
-      </div>
+    </nav>
+
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide-1" id="slide1">
+                <div style="padding:2rem"></div>
+                <header class="jumbotron-dg p-2">
+                    <h1 class="display-6">Moldando o ensino para acessibilidade.</h1>
+                    <p class="subtitulo-jumbotron">Um projeto que faz uso da <em class="destaque-dg"> Impressora 3D</em>
+                        para
+                        facilitar o ensino para portadores de deficiência visual.</p>
+                </header>
+                <div class="py-1 carta" style="height: 100vh;">
+                    <h2 class="subtitulo-dg mt-2">Sobre o projeto</h2>
+                    <div class="mt-2 p-0">
+                        <div class="px-3">
+                            <p>Os materiais didáticos que envolvem a impressão 3D ou sua modelagem disponíveis
+                                atualmente são
+                                majoritariamente produzidos para estudantes que não portam limitações físicas. Os poucos
+                                voltados para
+                                deficientes visuais giram em torno da geometria e percepção espacial de objetos, em sua
+                                maioria para
+                                estudantes do ensino fundamental ou médio, logo deixando um vão para alunos de ensino
+                                superior.</p>
+                            <p>Nossa ideia surgiu da necessidade de materiais didáticos para alunos cegos. Mais
+                                especificamente, para
+                                estudantes de disciplinas que envolvem operações algébricas e vetoriais do curso de
+                                Análise e
+                                Desenvolvimento de Sistemas da instituição Faeterj-RIO.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ################### 2 #################### -->
+            <div class="swiper-slide slide-2 text-center">
+                <div class="gallery-container">
+                    <h2 class="subtitulo-dg display-2" style="padding-top:5rem">Galeria</h2>
+
+                    <!-- Linha 1 -->
+                    <div class="infinite-gallery-row linha-escura" data-speed="0.3">
+                        <div class="infinite-gallery">
+                            <img src="imagens/fotos/1.jpg" alt="Foto 1">
+                            <img src="imagens/fotos/2.jpg" alt="Foto 2">
+                            <img src="imagens/fotos/3.jpg" alt="Foto 3">
+                            <img src="imagens/fotos/4.jpg" alt="Foto 4">
+                        </div>
+                    </div>
+                    <!-- Linha 2 -->
+                    <div class="infinite-gallery-row" data-speed="0.9">
+                        <div class="infinite-gallery">
+                            <img src="imagens/fotos/2.jpg" alt="Foto 2">
+                            <img src="imagens/fotos/3.jpg" alt="Foto 3">
+                            <img src="imagens/fotos/4.jpg" alt="Foto 4">
+                            <img src="imagens/fotos/1.jpg" alt="Foto 1">
+                        </div>
+                    </div>
+                    <!-- Linha 3-->
+                    <div class="infinite-gallery-row linha-escura" data-speed="0.6">
+                        <div class="infinite-gallery">
+                            <img src="imagens/fotos/3.jpg" alt="Foto 3">
+                            <img src="imagens/fotos/4.jpg" alt="Foto 4">
+                            <img src="imagens/fotos/1.jpg" alt="Foto 1">
+                            <img src="imagens/fotos/2.jpg" alt="Foto 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ################### 3 #################### -->
+            <div class="swiper-slide slide-3 text-center">
+                <h2 class="subtitulo-dg display-2" style="padding-top:5rem">Links</h2>
+                <div class="container align-content-center" style="height: 70vh;">
+                    <div class="row align-items-center">
+                        <div class="col my-2">
+                            <a href="https://www.tinkercad.com/users/cT3rPSRHLya-douglas-rangel" target="_blank"
+                                class="botao-personalizado">
+                                <i class="fa-regular fa-lightbulb"></i>
+                                <span class="texto">Modelos 3D</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="col my-2">
+                            <a href="imagens/projeto.pdf" target="_blank" class="botao-personalizado">
+                                <i class="fa-regular fa-file-pdf"></i>
+                                <span class="texto">Trabalho completo</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="col my-2">
+                            <a href="https://drive.google.com/drive/folders/14-PPILB4befHjlbrTusFBOFrGPwj0KJk?usp=sharing"
+                                class="botao-personalizado">
+                                <i class="fa-regular fa-hard-drive"></i>
+                                <span class="texto">Drive</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ################### 4 #################### -->
+            <div class="swiper-slide slide-4">
+                <h2 class="subtitulo-dg display-2 ms-3 mb-0" style="padding-top:5rem">Fale comigo</h2>
+                <div class="form-container">
+                    <form id="contact-form">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" placeholder="Nome" id="name" name="user_name"
+                                required>
+                            <label for="name">Nome</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" placeholder="Email" id="email" name="user_email"
+                                required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Mensagem" id="message" name="message"
+                                style="height: 120px" required></textarea>
+                            <label for="message">Mensagem</label>
+                        </div>
+
+                        <!-- reCAPTCHA -->
+                        <div class="g-recaptcha mb-3" data-sitekey="6LcpCeQqAAAAAFAw19r62IfmWKWYY-Fnkf1Xza2l"></div>
+                        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+                        <button type="submit" class="btn btn-enviar w-100">Enviar</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
     </div>
-  </nav>
 
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide slide-1" id="slide1">
-        <div style="padding:2rem"></div>
-        <header class="jumbotron-dg p-2">
-          <h1 class="display-6">Moldando o ensino para acessibilidade.</h1>
-          <p class="subtitulo-jumbotron">Um projeto que faz uso da <em class="destaque-dg"> Impressora 3D</em> para
-            facilitar o ensino para portadores de deficiência visual.</p>
-        </header>
-        <div class="py-1 carta" style="height: 100vh;">
-          <h2 class="subtitulo-dg mt-2">Sobre o projeto</h2>
-          <div class="mt-2 p-0">
-            <div class="px-3">
-              <p>Os materiais didáticos que envolvem a impressão 3D ou sua modelagem disponíveis atualmente são
-                majoritariamente produzidos para estudantes que não portam limitações físicas. Os poucos voltados para
-                deficientes visuais giram em torno da geometria e percepção espacial de objetos, em sua maioria para
-                estudantes do ensino fundamental ou médio, logo deixando um vão para alunos de ensino superior.</p>
-              <p>Nossa ideia surgiu da necessidade de materiais didáticos para alunos cegos. Mais especificamente, para
-                estudantes de disciplinas que envolvem operações algébricas e vetoriais do curso de Análise e
-                Desenvolvimento de Sistemas da instituição Faeterj-RIO.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ################### 2 #################### -->
-      <div class="swiper-slide slide-2 text-center">
-        <div class="gallery-container">
-          <h2 class="subtitulo-dg display-2" style="padding-top:5rem">Galeria</h2>
-
-          <!-- Linha 1 -->
-          <div class="infinite-gallery-row linha-escura" data-speed="0.3">
-            <div class="infinite-gallery">
-              <img src="imagens/fotos/1.jpg" alt="Foto 1">
-              <img src="imagens/fotos/2.jpg" alt="Foto 2">
-              <img src="imagens/fotos/3.jpg" alt="Foto 3">
-              <img src="imagens/fotos/4.jpg" alt="Foto 4">
-            </div>
-          </div>
-          <!-- Linha 2 -->
-          <div class="infinite-gallery-row" data-speed="0.9">
-            <div class="infinite-gallery">
-              <img src="imagens/fotos/2.jpg" alt="Foto 2">
-              <img src="imagens/fotos/3.jpg" alt="Foto 3">
-              <img src="imagens/fotos/4.jpg" alt="Foto 4">
-              <img src="imagens/fotos/1.jpg" alt="Foto 1">
-            </div>
-          </div>
-          <!-- Linha 3-->
-          <div class="infinite-gallery-row linha-escura" data-speed="0.6">
-            <div class="infinite-gallery">
-              <img src="imagens/fotos/3.jpg" alt="Foto 3">
-              <img src="imagens/fotos/4.jpg" alt="Foto 4">
-              <img src="imagens/fotos/1.jpg" alt="Foto 1">
-              <img src="imagens/fotos/2.jpg" alt="Foto 2">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ################### 3 #################### -->
-      <div class="swiper-slide slide-3 text-center">
-        <h2 class="subtitulo-dg display-2" style="padding-top:5rem">Links</h2>
-        <div class="container align-content-center" style="height: 70vh;">
-          <div class="row align-items-center">
-            <div class="col my-2">
-              <a href="https://www.tinkercad.com/users/cT3rPSRHLya-douglas-rangel" target="_blank"
-                class="botao-personalizado">
-                <i class="fa-regular fa-lightbulb"></i>
-                <span class="texto">Modelos 3D</span>
-                <i class="fas fa-arrow-right"></i>
-              </a>
-            </div>
-            <div class="col my-2">
-              <a href="imagens/projeto.pdf" target="_blank" class="botao-personalizado">
-                <i class="fa-regular fa-file-pdf"></i>
-                <span class="texto">Trabalho completo</span>
-                <i class="fas fa-arrow-right"></i>
-              </a>
-            </div>
-            <div class="col my-2">
-              <a href="https://drive.google.com/drive/folders/14-PPILB4befHjlbrTusFBOFrGPwj0KJk?usp=sharing"
-                class="botao-personalizado">
-                <i class="fa-regular fa-hard-drive"></i>
-                <span class="texto">Drive</span>
-                <i class="fas fa-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ################### 4 #################### -->
-      <div class="swiper-slide slide-4">
-        <h2 class="subtitulo-dg display-2 ms-3 mb-0" style="padding-top:5rem">Fale comigo</h2>
-        <div class="form-container">
-          <form id="contact-form">
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control" placeholder="Nome" id="name" name="user_name" required>
-              <label for="name">Nome</label>
-            </div>
-            <div class="form-floating mb-3">
-              <input type="email" class="form-control" placeholder="Email" id="email" name="user_email" required>
-              <label for="email">Email</label>
-            </div>
-            <div class="form-floating mb-3">
-              <textarea class="form-control" placeholder="Mensagem" id="message" name="message" style="height: 120px"
-                required></textarea>
-              <label for="message">Mensagem</label>
-            </div>
-
-            <!-- reCAPTCHA -->
-            <div class="g-recaptcha mb-3" data-sitekey="6LcpCeQqAAAAAFAw19r62IfmWKWYY-Fnkf1Xza2l"></div>
-            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-            <button type="submit" class="btn btn-enviar w-100">Enviar</button>
-          </form>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- Bibliotecas -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/7b998e9095.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script src="script.js"></script>
+    <!-- Bibliotecas -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7b998e9095.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("NIYDrK5we5-T6fQjH");
+        })();
+    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
