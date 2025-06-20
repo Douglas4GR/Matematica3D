@@ -17,7 +17,7 @@ main {
     mask-position: center;
     transition: background-color 0.3s;
     padding-right: 4px;
-} 
+}
 
 .titulo-dg {
     color: #caf0f8;
@@ -45,7 +45,7 @@ main {
 
 
 .navbar-dg {
-    background-color: rgb(2, 48, 71,75%);
+    background-color: rgb(2, 48, 71, 75%);
     backdrop-filter: blur(10px);
     color: #caf0f8;
 }
@@ -80,6 +80,12 @@ main {
     padding: 0px 5px;
 }
 
+.linke {
+    color: #12ac79;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+
 .body-dg {
     background-size: cover;
     background-position: center;
@@ -91,8 +97,8 @@ main {
 .carta {
     border-radius: 1px;
     backdrop-filter: blur(5px);
-background: #3d2900;
-background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(215, 215, 215) 5%, rgba(255, 255, 255, 1) 10%);
+    background: #3d2900;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(215, 215, 215) 5%, rgba(255, 255, 255, 1) 10%);
     padding: 10px;
 }
 
