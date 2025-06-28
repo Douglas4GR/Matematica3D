@@ -1,30 +1,7 @@
 let swiper; // Swiper declarado no escopo global
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Inicializa EmailJS
-  emailjs.init("NIYDrK5we5-T6fQjH");
 
-  // Envio do formulário
-  const form = document.getElementById("contact-form");
-  if (form) {
-    form.addEventListener("submit", function (event) {
-      event.preventDefault();
-      const params = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        message: document.getElementById("message").value,
-      };
-
-      emailjs.send("service_hlevq7i", "template_uf5cfji", params)
-        .then(() => {
-          alert("Mensagem enviada com sucesso!");
-          form.reset();
-        }, (error) => {
-          alert("Erro ao enviar mensagem, tente novamente!");
-          console.error("Erro:", error);
-        });
-    });
-  }
 
   // === Inicializa o Swiper ===
   swiper = new Swiper('.swiper', {
