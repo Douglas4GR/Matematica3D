@@ -185,31 +185,24 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7b998e9095.js" crossorigin="anonymous"></script>
     <script>
-  // Inicializa o EmailJS
-  (function () {
-    emailjs.init("NIYDrK5we5-T6fQjH");
-  })();
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
 
-  // Lida com o envio do formulário
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("contact-form");
-
-    if (form) {
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        emailjs.sendForm('service_hlevq7i', 'template_uf5cfji', this)
-          .then(function () {
-            alert('Mensagem enviada com sucesso!');
-            form.reset();
-          }, function (error) {
-            console.error('Erro:', error);
-            alert('Erro ao enviar mensagem, tente novamente.');
-          });
-      });
-    }
-  });
-</script>
+            emailjs.sendForm('service_hlevq7i', 'template_uf5cfji', this)
+                .then(function () {
+                    alert('Mensagem enviada com sucesso!');
+                }, function (error) {
+                    console.log('Erro:', error);
+                    alert('Erro ao enviar mensagem.');
+                });
+        });
+    </script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("NIYDrK5we5-T6fQjH");
+        })();
+    </script>
     <script src="script.js"></script>
 </body>
 
