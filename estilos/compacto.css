@@ -1,0 +1,107 @@
+/* FORMULÁRIO */
+.form-container {
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+    backdrop-filter: blur(8px);
+    /* Desfoque de fundo para um efeito elegante */
+}
+
+/* Campos de entrada */
+.form-control {
+    background: rgba(60, 60, 60, 0.1) !important;
+    /* Fundo translúcido escuro */
+    color: rgb(0, 0, 0) !important;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Labels flutuantes */
+.form-floating>label {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* Focus nos campos */
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-color: rgb(0, 0, 0);
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+    color: rgb(0, 0, 0);
+}
+
+/* Botão */
+.btn-enviar {
+    background-color: #219ebc;
+    color: rgb(255, 255, 255);
+    border: none;
+    backdrop-filter: blur(4px);
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #6ae1ff;
+    color: rgb(255, 255, 255);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 1.5rem;
+    }
+}
+
+
+/* LINKS */
+
+.link-personalizado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: #219ebc;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 1px;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    text-decoration: none;
+}
+
+.link-personalizado i {
+    font-size: 1.2rem;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.link-personalizado .texto {
+    flex: 1;
+    text-align: center;
+    color: #ffffff;
+    font-weight: lighter;
+}
+
+.link-personalizado:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.link-personalizado:hover .fa-arrow-right {
+    transform: translateX(5px);
+}
+
+/* Responsivo: aumenta o tamanho do texto e padding em telas pequenas */
+@media (max-width: 480px) {
+    .link-personalizado {
+        padding: 1.2em 1.6em;
+        font-size: 1.2rem;
+    }
+}
